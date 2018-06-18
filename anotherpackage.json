@@ -1,0 +1,29 @@
+{
+  "name": "day-5",
+  "version": "1.0.0",
+  "main": "build/index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src/ -d build/",
+    "prestart": "yarn run build",
+    "start": "node ."
+  },
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-0": "^6.24.1",
+    "jsverify": "^0.8.3",
+    "mocha": "^5.2.0",
+    "react": "^16.4.1",
+    "react-router": "^4.3.1",
+    "redux": "^4.0.0",
+    "standard": "^11.0.1"
+  },
+  "babel": {
+    "presets": [
+      "env",
+      "stage-0"
+    ]
+  }
+}
